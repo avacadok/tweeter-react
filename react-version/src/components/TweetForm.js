@@ -11,9 +11,9 @@ function TweetForm(){
 
   return (
     <section className="newtweet">
-      <form method="post" action="/tweets" className="newtweet__form" >
+      <form method="post" action="/tweets" className="newtweet__form" onSubmit={submit}>
         <textarea className="form__textarea" name="text" placeholder={placeholder}></textarea>
-        <input type="submit" value="Tweet" className="form__input" />
+        <input type="submit" value="Tweet" className="form__input" onClick={click}/>
         <span className="form__counter">140</span>
       </form>
     </section>
